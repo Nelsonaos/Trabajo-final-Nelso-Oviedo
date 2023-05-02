@@ -1,0 +1,47 @@
+
+
+
+
+
+ /*  seccion reiki */
+.image-section {
+    background-color: #f9f9f9;
+    padding: 0 0;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+  /* imagenes  */
+.image-section .caption {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+  /* imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+  /* sueltos */
+.image-description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/*  mapa flex */
+.mapa { 
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
