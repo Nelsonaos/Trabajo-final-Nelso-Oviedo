@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* carrusel */
 .carousel {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   margin: auto;
   position: absolute;
   top: 0;
@@ -12,6 +12,44 @@
 }
 
 /* fin carrusel */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.carousel-caption .btn-primary {
+  font-size: 1;
+}
+
 /* Footer */
 footer {
   background-color: #212529;
@@ -81,6 +119,56 @@ footer a:hover {
   display: flex;
   justify-content: center;
   margin: 2px;
+}
+
+header {
+  background-color: #222;
+  padding: 0 0;
+}
+header .navbar {
+  justify-content: space-between;
+}
+header .navbar .navbar-brand .logo {
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+header .navbar .navbar-brand .logo:hover {
+  transform: scale(1.1);
+}
+header .navbar .nav-item a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+header .navbar .nav-item a:hover {
+  color: #00bcd4;
+}
+header .navbar .nav-item.active a {
+  color: #00bcd4;
+}
+header .navbar .navbar-toggler {
+  background-color: white;
+}
+header .player {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+header .player iframe {
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

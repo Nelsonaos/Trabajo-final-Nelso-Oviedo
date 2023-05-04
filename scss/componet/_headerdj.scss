@@ -1,0 +1,57 @@
+@import "../base/variables";
+
+header {
+background-color: #222;
+padding: 0 0;
+.navbar {
+    justify-content: space-between;
+    .navbar-brand {
+    .logo {
+        width: 150px;
+        height: 150px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+        transform: scale(1.1);
+        }
+    }
+    }
+    .nav-item {
+    a {
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        &:hover {
+        color: $primary-color;
+        }
+    }
+    &.active {
+        a {
+        color: $primary-color;
+    }
+    }
+    }
+    .navbar-toggler {
+    background-color: white;
+    }
+}
+.player {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    }
+}
+}
+
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}

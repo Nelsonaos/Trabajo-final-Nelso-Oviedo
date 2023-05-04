@@ -2,8 +2,8 @@
 
 /* carrusel */
 .carousel {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     margin: auto;
     position: absolute;
     top: 0;
@@ -12,3 +12,46 @@
     bottom: 0;
 }
 /* fin carrusel */
+
+
+// agregado 
+
+// Estilos generales del main
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+  // Estilos del carrusel
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.carousel-caption .btn-primary {
+    font-size: 1
+}
