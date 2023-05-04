@@ -1,100 +1,243 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
+
+<body class="bodydj">
     <header class="dj">
-        <div class="container">
-        <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-            <img src="../imagenes/Recurso 5cabeza-muñeco (1).png" alt="Logo DJ" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html">volver</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Eventos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Música</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Galería</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-            </ul>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="https://www.instagram.com/agusvideladj/" target="_blank">
+                    <img src="../imagenes/agus videla png negro.png" alt="Logo DJ" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">volver<a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion1">Mis Listas De Spotyfy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion2">Remix</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-spotify">
+                        
+                    </div>
+                </div>
         </div>
         </nav>
-    </div>
+        </div>
     </header>
     <main>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="../imagenes/agus 4.jpg" class="d-block w-100" alt="First slide">
-            <div class="carousel-caption d-md-block">
-                <h5>Estas Listo Para El Finde</h5>
-                <p>preparate con estos temas</p>
-                <a href="#seccion1" class="btn btn-primary">Ver más</a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/mayo agus.jpeg" class="d-block w-100" alt="First slide">
+                    <div class="carousel-caption d-md-block">
+                        <a href="#fechas" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/agus 2.jpg" class="d-block w-100" alt="Second slide">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Foto 2</h5>
+                        <p>Descripción de la foto 2.</p>
+                        <a href="#seccion2" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
             </div>
-            </div>
-            <div class="carousel-item">
-            <img src="/imagenes/agus 2.jpg" class= "d-block w-100" alt="Second slide">
-            <div class="carousel-caption d-md-block">
-                <h5>Foto 2</h5>
-                <p>Descripción de la foto 2.</p>
-                <a href="#seccion2" class="btn btn-primary">Ver más</a>
-            </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-        </div>
-    
+
         <section id="seccion1">
-        <h2>Calentamos El Finde</h2>
-        <p>Contenido de la sección 1.</p>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1kkz5f5SZ0CvG1VLLBHg0g?utm_source=generator" width="100%" height="482" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <h2>Calentamos El Finde</h2>
+            <p>Dj Naos</p>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/1kkz5f5SZ0CvG1VLLBHg0g?utm_source=generator" width="100%"
+                height="482" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <h2>Calentamos El Finde</h2>
+            <p>Dj Naos</p>    
+            <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/03tgLEsv2M9fKHhW2UXp7o?utm_source=generator"
+                        width="100%" height="482" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
         </section>
-    
+
         <section id="seccion2">
-        <h2>Sección 2</h2>
-        <p>Contenido de la sección 2.</p>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/03tgLEsv2M9fKHhW2UXp7o?utm_source=generator" width="100%" height="482" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <h2>Remix</h2>
+            <p>Escuchaste lo ultimo</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/1T-YepXqJJM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </section>
-        
+        <section id="fechas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Próximas Fechas</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>5 Mayo</h3></div>
+                            <div class="date-card-body"><h4>The Bottom</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>6 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Unplugged</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>10 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Cuatro Catorce </h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>11 Mayo</h3></div>
+                            <div class="date-card-body"><h4>The Bottom</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>12 Mayo</h3></div>
+                            <div class="date-card-body"><h4>El Once (Arroyito)</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>13 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Oxxo (San Francisco) </h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>17 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Cuatro Catorce</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>18 Mayo</h3></div>
+                            <div class="date-card-body"><h4>The Bottom</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>19 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Unplugged </h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>20 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Republik (Villa Dolores)</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>24 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Cuatro Catorce</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>25 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Chilli Streetdood</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>26 Mayo</h3></div>
+                            <div class="date-card-body"><h4>The Bottom</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>27 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Fruta</h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="date-card">
+                            <div class="date-card-header"><h3>31 Mayo</h3></div>
+                            <div class="date-card-body"><h4>Cuatro Catorce </h4></div>
+                            <div class="date-card-footer"><a href="https://www.instagram.com/lugardelevento/" target="_blank">Instagram</a></div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+
 
     </main>
-    
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/agustin.videla.9"
+                                    target="_blank">Facebook</a></li>
+                            <li class="list-inline-item" target="_blank"><a
+                                    href="https://www.youtube.com/@agusvideladj4223">Youtube</a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/agusvideladj"
+                                    target="_blank">Instagram</a></li>
+                            <li class="list-inline-item"><a href="https://soundcloud.com/agusvideladj"
+                                    target="_blank">Soundcloud</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -18,9 +18,9 @@
 
 // Estilos generales del main
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 50px;
 }
 
   // Estilos del carrusel
@@ -29,7 +29,7 @@ main {
 }
 
 .carousel-item img {
-object-fit: cover;
+object-fit: fill;
     height: 100%;
 }
 

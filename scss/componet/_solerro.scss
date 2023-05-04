@@ -1,53 +1,66 @@
 @import "../base/variables";
-@import "../componet/colores"
+@import "../componet/colores";
 
 
-.solerro  {
-  background-color:#df7016;
-  color: #ffffff;
-  padding: 2px 2px;
+div.conteiner1 {
+  background-color: #df7016;
   font-size: 24px;
 }
-
 .logo {
-    width: 100px;
-    height: 100px;
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+  transform: scale(1.1);
   }
+}
+a.nav-link {
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+}
   
   .navbar-brand {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   }
+  .row {
+    .col-md-6 {
+      h2 {
+        font-size: 35px;
+      }
   
+      p {
+        font-size: 20px;
+      }
+    }
+  }
   .navbar-nav .nav-item {
-    margin-left: 20px;
+  margin-left: 20px;
   }
   .bg-primary-subtle {
-    background-color: white !important;
-    font-family: 'Open Sans', sans-serif;
-    color: #df7016;
-    text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #df7016;
+  text-decoration: none;
   }
   @media (max-width: 991px) {
-    .navbar-nav {
+  .navbar-nav {
       margin-top: 10px;
       width: 100%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-    }
+  }
   
-    .navbar-nav .nav-item {
+  .navbar-nav .nav-item {
       margin: 0;
       flex-basis: 33.33%;
-    }
+  }
   }
   
 
-/* Fin header */
+
 
 .col-md-6 {
-
   overflow: hidden; /* ocultar el texto que sobrepasa el tamaño de la columna */
   text-overflow: ellipsis; /* agregar puntos suspensivos en el texto ocultado */
  /* evitar el salto de línea del texto */

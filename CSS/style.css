@@ -1,4 +1,187 @@
 @charset "UTF-8";
+.bodydj {
+  background-color: #44ae3a;
+}
+
+header.dj {
+  background-color: #3c9f28 !important;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+header.dj .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+header.dj .navbar-brand:hover {
+  color: #000;
+}
+header.dj .logo {
+  width: 150px;
+  height: 150px;
+  animation: spin 2s ease-in-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(15px) scale(1.5);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+header.dj .navbar-nav {
+  margin-left: 20px;
+}
+header.dj .navbar-nav .nav-link {
+  font-size: 18px;
+  width: max-content;
+  font-weight: bold;
+  color: #fffafa;
+}
+header.dj .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+header.dj .navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+header.dj .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../../imagenes/Recurso 5cabeza-muñeco (1).png");
+  width: 50px;
+  height: 50px;
+}
+header.dj .navbar-toggler:hover {
+  background-color: transparent;
+}
+header.dj .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-spotify {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-spotify iframe {
+  width: 100%;
+  height: 80px;
+}
+
+.dj-section {
+  padding: 50px 0;
+}
+.dj-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.dj-section .event-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.dj-section .event-card .event-date {
+  background-color: #FFA07A;
+  border-radius: 70%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 20px;
+}
+.dj-section .event-card .event-date p {
+  margin: 0;
+  font-size: 24px;
+}
+.dj-section .event-card .event-details h4 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.dj-section .event-card .event-details p {
+  font-size: 18px;
+  margin: 0;
+}
+
+div.conteiner1 {
+  background-color: #df7016;
+  font-size: 24px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+a.nav-link {
+  text-align: center;
+  font-family: "Instrument Serif", serif;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.row .col-md-6 h2 {
+  font-size: 35px;
+}
+.row .col-md-6 p {
+  font-size: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.bg-primary-subtle {
+  font-family: "Open Sans", sans-serif;
+  color: #df7016;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navbar-nav .nav-item {
+    margin: 0;
+    flex-basis: 33.33%;
+  }
+}
+.col-md-6 {
+  overflow: hidden; /* ocultar el texto que sobrepasa el tamaño de la columna */
+  text-overflow: ellipsis; /* agregar puntos suspensivos en el texto ocultado */
+  /* evitar el salto de línea del texto */
+}
+
+.col-md-6 p {
+  font-size: 1em; /* establecer tamaño de fuente inicial */
+  transition: font-size 0.2s ease-in-out; /* agregar transición al cambiar el tamaño de fuente */
+}
+
+.col-md-6:hover p {
+  font-size: 1.2em; /* aumentar el tamaño de fuente al pasar el cursor por encima */
+}
+
 /* carrusel */
 .carousel {
   width: 75%;
@@ -13,9 +196,9 @@
 
 /* fin carrusel */
 main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 50px;
 }
 
 .carousel-item {
@@ -23,7 +206,7 @@ main {
 }
 
 .carousel-item img {
-  object-fit: cover;
+  object-fit: fill;
   height: 100%;
 }
 
@@ -85,6 +268,7 @@ footer a:hover {
 
 .image-section img {
   max-width: 100%;
+  border-radius: 12px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -121,49 +305,34 @@ footer a:hover {
   margin: 2px;
 }
 
-header {
+header.dj {
   background-color: #222;
   padding: 0 0;
 }
-header .navbar {
+header.dj .navbar {
   justify-content: space-between;
 }
-header .navbar .navbar-brand .logo {
+header.dj .navbar .navbar-brand .logo {
   width: 150px;
   height: 150px;
   transition: all 0.3s ease-in-out;
 }
-header .navbar .navbar-brand .logo:hover {
+header.dj .navbar .navbar-brand .logo:hover {
   transform: scale(1.1);
 }
-header .navbar .nav-item a {
+header.dj .navbar .nav-item a {
   color: white;
   font-size: 18px;
   text-transform: uppercase;
 }
-header .navbar .nav-item a:hover {
-  color: #00bcd4;
+header.dj .navbar .nav-item a:hover {
+  color: #00bcd4 #df7016;
 }
-header .navbar .nav-item.active a {
-  color: #00bcd4;
+header.dj .navbar .nav-item.active a {
+  color: #00bcd4 #df7016;
 }
-header .navbar .navbar-toggler {
+header.dj .navbar .navbar-toggler {
   background-color: white;
-}
-header .player {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
