@@ -155,12 +155,7 @@ header .player {
   justify-content: center;
   margin-top: 20px;
 }
-header .player iframe {
-  border: none;
-  width: 100%;
-  max-width: 600px;
-  height: 100%;
-}
+
 
 @keyframes spin {
   from {
