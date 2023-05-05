@@ -2,7 +2,6 @@
 .bodydj {
   background-color: #44ae3a;
 }
-
 header.dj {
   background-color: #3c9f28 !important;
   border-bottom: 1px solid #ccc;
@@ -168,18 +167,18 @@ a.nav-link {
   }
 }
 .col-md-6 {
-  overflow: hidden; /* ocultar el texto que sobrepasa el tamaño de la columna */
-  text-overflow: ellipsis; /* agregar puntos suspensivos en el texto ocultado */
-  /* evitar el salto de línea del texto */
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+
 }
 
 .col-md-6 p {
-  font-size: 1em; /* establecer tamaño de fuente inicial */
-  transition: font-size 0.2s ease-in-out; /* agregar transición al cambiar el tamaño de fuente */
+  font-size: 1em; 
+  transition: font-size 0.2s ease-in-out; 
 }
 
 .col-md-6:hover p {
-  font-size: 1.2em; /* aumentar el tamaño de fuente al pasar el cursor por encima */
+  font-size: 1.2em; 
 }
 
 /* carrusel */
