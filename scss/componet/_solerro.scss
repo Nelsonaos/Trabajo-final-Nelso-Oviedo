@@ -1,7 +1,4 @@
 @import "../base/variables";
-@import "../componet/colores";
-
-
 div.conteiner1 {
   background-color: #df7016;
   font-size: 24px;
@@ -42,7 +39,7 @@ a.nav-link {
   color: #df7016;
   text-decoration: none;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
   .navbar-nav {
       margin-top: 10px;
       width: 100%;
@@ -57,20 +54,47 @@ a.nav-link {
   }
   }
   
-
-
-
-.col-md-6 {
-  overflow: hidden; /* ocultar el texto que sobrepasa el tamaño de la columna */
-  text-overflow: ellipsis; /* agregar puntos suspensivos en el texto ocultado */
- /* evitar el salto de línea del texto */
-}
-
-.col-md-6 p {
-  font-size: 1em; /* establecer tamaño de fuente inicial */
-  transition: font-size 0.2s ease-in-out; /* agregar transición al cambiar el tamaño de fuente */
-}
-
-.col-md-6:hover p {
-  font-size: 1.2em; /* aumentar el tamaño de fuente al pasar el cursor por encima */
-}
+  .footersol {
+    background-color: #df7010;
+    padding: 20px;
+  
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__text {
+      font-size: 16px;
+      color: #ffefef;
+    }
+  
+    &__social-media {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      &-link {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 25px;
+        color: #ffffff;
+        text-decoration: none;
+  
+        &:hover {
+          color: #333;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+  
+        &-link {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  

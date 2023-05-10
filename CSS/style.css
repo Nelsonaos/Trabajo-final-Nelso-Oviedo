@@ -17,8 +17,6 @@ header.dj .navbar-brand:hover {
   color: #000;
 }
 header.dj .logo {
-  width: 150px;
-  height: 150px;
   animation: spin 2s ease-in-out infinite;
 }
 @keyframes spin {
@@ -58,59 +56,6 @@ header.dj .navbar-toggler:hover {
 }
 header.dj .navbar-toggler:focus {
   box-shadow: none;
-}
-
-.navbar-spotify {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.navbar-spotify iframe {
-  width: 100%;
-  height: 80px;
-}
-
-.dj-section {
-  padding: 50px 0;
-}
-.dj-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.dj-section .event-card {
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-.dj-section .event-card .event-date {
-  background-color: #FFA07A;
-  border-radius: 70%;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-  margin-right: 20px;
-}
-.dj-section .event-card .event-date p {
-  margin: 0;
-  font-size: 24px;
-}
-.dj-section .event-card .event-details h4 {
-  font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.dj-section .event-card .event-details p {
-  font-size: 18px;
-  margin: 0;
 }
 
 div.conteiner1 {
@@ -154,7 +99,7 @@ a.nav-link {
   text-decoration: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .navbar-nav {
     margin-top: 10px;
     width: 100%;
@@ -167,25 +112,50 @@ a.nav-link {
     flex-basis: 33.33%;
   }
 }
-.col-md-6 {
-  overflow: hidden; /* ocultar el texto que sobrepasa el tamaño de la columna */
-  text-overflow: ellipsis; /* agregar puntos suspensivos en el texto ocultado */
-  /* evitar el salto de línea del texto */
+.footersol {
+  background-color: #df7010;
+  padding: 20px;
 }
-
-.col-md-6 p {
-  font-size: 1em; /* establecer tamaño de fuente inicial */
-  transition: font-size 0.2s ease-in-out; /* agregar transición al cambiar el tamaño de fuente */
+.footersol__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.col-md-6:hover p {
-  font-size: 1.2em; /* aumentar el tamaño de fuente al pasar el cursor por encima */
+.footersol__text {
+  font-size: 16px;
+  color: #ffefef;
+}
+.footersol__social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footersol__social-media-link {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footersol__social-media-link:hover {
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .footersol__social-media {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .footersol__social-media-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* carrusel */
 .carousel {
-  width: 75%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   margin: auto;
   position: absolute;
   top: 0;
@@ -196,9 +166,9 @@ a.nav-link {
 
 /* fin carrusel */
 main {
-  max-width: 1000px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 15px;
 }
 
 .carousel-item {
@@ -222,11 +192,6 @@ main {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.carousel-caption p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 
 .carousel-caption .btn-primary {
