@@ -1,6 +1,6 @@
-@import "../base/variables";
+@import "../base/listas";
 div.conteiner1 {
-  background-color: #df7016;
+  background-color: nth($colores , 6);
   font-size: 24px;
 }
 .logo {
@@ -14,7 +14,11 @@ div.conteiner1 {
 a.nav-link {
   text-align: center;
   font-family: 'Instrument Serif', serif;
-}
+  color: #ffffff;
+  &hover{
+    color: #333;
+  }
+  }
   
   .navbar-brand {
   display: flex;

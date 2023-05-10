@@ -75,6 +75,10 @@ div.conteiner1 {
 a.nav-link {
   text-align: center;
   font-family: "Instrument Serif", serif;
+  color: #ffffff;
+}
+a.nav-linkhover {
+  color: #333;
 }
 
 .navbar-brand {
@@ -286,15 +290,15 @@ header.dj .navbar .navbar-brand .logo:hover {
   transform: scale(1.1);
 }
 header.dj .navbar .nav-item a {
-  color: white;
+  color: black;
   font-size: 18px;
   text-transform: uppercase;
 }
 header.dj .navbar .nav-item a:hover {
-  color: #00bcd4 #df7016;
+  color: white;
 }
 header.dj .navbar .nav-item.active a {
-  color: #00bcd4 #df7016;
+  color: white;
 }
 header.dj .navbar .navbar-toggler {
   background-color: white;

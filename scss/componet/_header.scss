@@ -1,4 +1,4 @@
-
+@import "../base/listas";
     header.dj {
         background-color: #222;
         padding: 0 0;
@@ -16,16 +16,16 @@
             }
             .nav-item {
             a {
-                color: white;
+                color: black;
                 font-size: 18px;
                 text-transform: uppercase;
                 &:hover {
-                color: $primary-color;
+                color: white;
                 }
             }
             &.active {
                 a {
-                color: $primary-color;
+                color:nth($colores ,7);
             }
             }
             }
