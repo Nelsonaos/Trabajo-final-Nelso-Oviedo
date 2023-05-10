@@ -156,10 +156,14 @@ a.nav-linkhover {
   }
 }
 
+.titulosmedio {
+  text-align: center;
+}
+
 /* carrusel */
 .carousel {
   width: 100%;
-  height: 100%;
+  height: 75%;
   margin: auto;
   position: absolute;
   top: 0;
@@ -170,7 +174,7 @@ a.nav-linkhover {
 
 /* fin carrusel */
 main {
-  max-width: 1920px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -265,13 +269,6 @@ footer a:hover {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
-}
-
-/*  mapa flex */
-.mapa {
-  display: flex;
-  justify-content: center;
-  margin: 2px;
 }
 
 header.dj {
