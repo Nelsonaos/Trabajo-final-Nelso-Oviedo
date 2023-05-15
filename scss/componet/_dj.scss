@@ -1,11 +1,11 @@
 @import "../base/mixin";
-
 header.dj {
         @include general (#3c9f28, 1px solid #ccc,10px 0);
+        background-color: #3c9f28 !important;
         .navbar-brand {
         font-size: 12px;
         font-weight: bold;
-        color: #333;
+        color: #ffffff;
         &:hover {
             color: #000;
         }
@@ -40,7 +40,7 @@ header.dj {
         border: none;
         background-color: transparent;
         .navbar-toggler-icon {
-            background-image: url('../../imagenes/Recurso\ 5cabeza-muñeco\ \(1\).png');
+            background-image: url('../../imagenes/Recurso-5cabeza-muñeco.png');
             width: 50px;
             height: 50px;
         }

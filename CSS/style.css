@@ -3,11 +3,12 @@ header.dj {
   background-color: #3c9f28;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+  background-color: #3c9f28 !important;
 }
 header.dj .navbar-brand {
   font-size: 12px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 header.dj .navbar-brand:hover {
   color: #000;
@@ -43,7 +44,7 @@ header.dj .navbar-toggler {
   background-color: transparent;
 }
 header.dj .navbar-toggler .navbar-toggler-icon {
-  background-image: url("../../imagenes/Recurso 5cabeza-muñeco (1).png");
+  background-image: url("../../imagenes/Recurso-5cabeza-muñeco.png");
   width: 50px;
   height: 50px;
 }
@@ -168,7 +169,6 @@ a.nav-linkhover {
   bottom: 0;
 }
 
-/* fin carrusel */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -228,7 +228,6 @@ footer a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/*  fin footer */
 /*  seccion reiki */
 .image-section {
   background-color: #f9f9f9;

@@ -51,40 +51,33 @@ a.nav-link {
       justify-content: space-between;
       flex-wrap: wrap;
   }
-  
   .navbar-nav .nav-item {
       margin: 0;
       flex-basis: 33.33%;
   }
   }
-  
   .footersol {
     background-color: #df7010;
     padding: 20px;
-  
     &__content {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-  
     &__text {
       font-size: 16px;
       color: #ffefef;
     }
-  
     &__social-media {
       list-style: none;
       margin: 0;
       padding: 0;
-  
       &-link {
         display: inline-block;
         margin-right: 10px;
         font-size: 25px;
         color: #ffffff;
         text-decoration: none;
-  
         &:hover {
           color: #333;
         }
@@ -93,7 +86,6 @@ a.nav-link {
         display: flex;
         flex-wrap: wrap;
         margin-top: 10px;
-  
         &-link {
           margin-right: 0;
           margin-bottom: 10px;
