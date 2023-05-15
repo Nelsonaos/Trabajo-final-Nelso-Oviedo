@@ -1,10 +1,7 @@
-.bodydj {
-    background-color: #44ae3a;
-}
+@import "../base/mixin";
+
 header.dj {
-        background-color: #3c9f28 !important;
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0;
+        @include general (#3c9f28, 1px solid #ccc,10px 0);
         .navbar-brand {
         font-size: 12px;
         font-weight: bold;

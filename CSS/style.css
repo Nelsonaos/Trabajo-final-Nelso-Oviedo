@@ -1,10 +1,6 @@
 @charset "UTF-8";
-.bodydj {
-  background-color: #44ae3a;
-}
-
 header.dj {
-  background-color: #3c9f28 !important;
+  background-color: #3c9f28;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
