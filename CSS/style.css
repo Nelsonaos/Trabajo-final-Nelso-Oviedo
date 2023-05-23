@@ -83,10 +83,10 @@ a.nav-linkhover {
   align-items: center;
 }
 
-.row .col-md-6 h2 {
+.row .col-md-6 h2, .row .col-md-12 h2 {
   font-size: 35px;
 }
-.row .col-md-6 p {
+.row .col-md-6 p, .row .col-md-12 p {
   font-size: 20px;
 }
 
