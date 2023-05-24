@@ -1,7 +1,7 @@
 @import "../base/mixin";
 header.dj {
         @include general (#3c9f28, 1px solid #ccc,10px 0);
-        background-color: #3c9f28 !important;
+        background-color: #3c9f28 !important; /* esto no supe como resolverlo*/
         .navbar-brand {
         font-size: 12px;
         font-weight: bold;
